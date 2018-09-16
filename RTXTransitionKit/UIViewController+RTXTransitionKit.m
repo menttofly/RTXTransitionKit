@@ -37,14 +37,6 @@
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-//- (void)setRtx_preferNavigationItem:(BOOL)rtx_preferNavigationItem {
-//    objc_setAssociatedObject(self, @selector(rtx_preferNavigationItem), @(rtx_preferNavigationItem), OBJC_ASSOCIATION_ASSIGN);
-//}
-//
-//- (BOOL)rtx_preferNavigationItem {
-//    return [objc_getAssociatedObject(self, _cmd) boolValue];
-//}
-
 - (void)setRtx_isTransitionViewController:(BOOL)rtx_isTransitionViewController {
     objc_setAssociatedObject(self, @selector(rtx_isTransitionViewController), @(rtx_isTransitionViewController), OBJC_ASSOCIATION_ASSIGN);
 }

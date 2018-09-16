@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../RTXTransitionKit/UIViewController+RTXTransitionKit.m"
-            timestampString = "558806230.736617"
+            timestampString = "558807129.4328181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-rtx_processMultiGestureRecognizer"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../RTXTransitionKit/UIViewController+RTXTransitionKit.m"
-            timestampString = "558806230.73669"
+            timestampString = "558807129.4328851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "-rtx_processMultiGestureRecognizer"
             landmarkType = "7">
          </BreakpointContent>

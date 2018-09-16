@@ -21,6 +21,10 @@
 
 @implementation RTXNavigationController
 
+- (void)dealloc {
+    [self removeObserver:self forKeyPath:@"rtx_interactiveTransition.interactionProcessing"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -28,7 +32,7 @@
     self.delegate = self;
     [self setNavigationBarHidden:YES animated:NO];
     [self.rtx_interactiveTransition wireToViewController:self];
-//    [self addObserver:self forKeyPath:@"rtx_interactiveTransition.interactionProcessing" options:NSKeyValueObservingOptionNew context:NULL];
+    [self addObserver:self forKeyPath:@"rtx_interactiveTransition.interactionProcessing" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +57,13 @@
         _rtx_interactiveTransition = RTXInteractiveTransition.new;
     }
     return _rtx_interactiveTransition;
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if (!self.isViewLoaded) return;
+    if ([keyPath isEqualToString:@"rtx_interactiveTransition.interactionProcessing"]) {
+        self.transitionAnimation.rtx_isInteractive = self.rtx_interactiveTransition.interactionProcessing;
+    }
 }
 
 #pragma mark - UINavigationControllerDelegate
