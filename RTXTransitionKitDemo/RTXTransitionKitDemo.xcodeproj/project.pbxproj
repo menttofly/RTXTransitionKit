@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D781267214E9D2400E4DEBA /* RTXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D781266214E9D2400E4DEBA /* RTXViewController.m */; };
+		1D78126A214E9D4300E4DEBA /* RTXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D781269214E9D4300E4DEBA /* RTXNavigationController.m */; };
+		1D78126D214E9D8A00E4DEBA /* RTXTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D78126C214E9D8A00E4DEBA /* RTXTransitionAnimation.m */; };
+		1D781270214E9DAD00E4DEBA /* RTXInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D78126F214E9DAD00E4DEBA /* RTXInteractiveTransition.m */; };
+		1D781273214E9DD700E4DEBA /* RTXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D781272214E9DD700E4DEBA /* RTXNavigationBar.m */; };
+		1D781276214EA89300E4DEBA /* RTXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D781275214EA89300E4DEBA /* RTXTabBarController.m */; };
+		1D78127C214EAC2900E4DEBA /* RTXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D78127B214EAC2900E4DEBA /* RTXBaseViewController.m */; };
+		1DD5C80A214C2B60005ED5B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5C809214C2B60005ED5B1 /* AppDelegate.m */; };
+		1DD5C812214C2B62005ED5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD5C811214C2B62005ED5B1 /* Assets.xcassets */; };
+		1DD5C815214C2B62005ED5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD5C813214C2B62005ED5B1 /* LaunchScreen.storyboard */; };
+		1DD5C818214C2B62005ED5B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5C817214C2B62005ED5B1 /* main.m */; };
+		1DD5C821214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD5C820214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D781265214E9D2400E4DEBA /* RTXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXViewController.h; sourceTree = "<group>"; };
+		1D781266214E9D2400E4DEBA /* RTXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXViewController.m; sourceTree = "<group>"; };
+		1D781268214E9D4300E4DEBA /* RTXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXNavigationController.h; sourceTree = "<group>"; };
+		1D781269214E9D4300E4DEBA /* RTXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXNavigationController.m; sourceTree = "<group>"; };
+		1D78126B214E9D8A00E4DEBA /* RTXTransitionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXTransitionAnimation.h; sourceTree = "<group>"; };
+		1D78126C214E9D8A00E4DEBA /* RTXTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXTransitionAnimation.m; sourceTree = "<group>"; };
+		1D78126E214E9DAD00E4DEBA /* RTXInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXInteractiveTransition.h; sourceTree = "<group>"; };
+		1D78126F214E9DAD00E4DEBA /* RTXInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXInteractiveTransition.m; sourceTree = "<group>"; };
+		1D781271214E9DD700E4DEBA /* RTXNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXNavigationBar.h; sourceTree = "<group>"; };
+		1D781272214E9DD700E4DEBA /* RTXNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXNavigationBar.m; sourceTree = "<group>"; };
+		1D781274214EA89300E4DEBA /* RTXTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXTabBarController.h; sourceTree = "<group>"; };
+		1D781275214EA89300E4DEBA /* RTXTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXTabBarController.m; sourceTree = "<group>"; };
+		1D78127A214EAC2900E4DEBA /* RTXBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXBaseViewController.h; sourceTree = "<group>"; };
+		1D78127B214EAC2900E4DEBA /* RTXBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXBaseViewController.m; sourceTree = "<group>"; };
+		1DD5C805214C2B60005ED5B1 /* RTXTransitionKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTXTransitionKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD5C808214C2B60005ED5B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DD5C809214C2B60005ED5B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DD5C811214C2B62005ED5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DD5C814214C2B62005ED5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DD5C816214C2B62005ED5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD5C817214C2B62005ED5B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DD5C81F214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTXTransitionKit.h"; sourceTree = "<group>"; };
+		1DD5C820214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTXTransitionKit.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DD5C802214C2B60005ED5B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DD5C7FC214C2B60005ED5B1 = {
+			isa = PBXGroup;
+			children = (
+				1DD5C81E214C2B77005ED5B1 /* RTXTransitionKit */,
+				1DD5C807214C2B60005ED5B1 /* RTXTransitionKitDemo */,
+				1DD5C806214C2B60005ED5B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DD5C806214C2B60005ED5B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD5C805214C2B60005ED5B1 /* RTXTransitionKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DD5C807214C2B60005ED5B1 /* RTXTransitionKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1DD5C808214C2B60005ED5B1 /* AppDelegate.h */,
+				1DD5C809214C2B60005ED5B1 /* AppDelegate.m */,
+				1D781274214EA89300E4DEBA /* RTXTabBarController.h */,
+				1D781275214EA89300E4DEBA /* RTXTabBarController.m */,
+				1D78127A214EAC2900E4DEBA /* RTXBaseViewController.h */,
+				1D78127B214EAC2900E4DEBA /* RTXBaseViewController.m */,
+				1DD5C811214C2B62005ED5B1 /* Assets.xcassets */,
+				1DD5C813214C2B62005ED5B1 /* LaunchScreen.storyboard */,
+				1DD5C816214C2B62005ED5B1 /* Info.plist */,
+				1DD5C817214C2B62005ED5B1 /* main.m */,
+			);
+			path = RTXTransitionKitDemo;
+			sourceTree = "<group>";
+		};
+		1DD5C81E214C2B77005ED5B1 /* RTXTransitionKit */ = {
+			isa = PBXGroup;
+			children = (
+				1DD5C81F214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.h */,
+				1DD5C820214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.m */,
+				1D781268214E9D4300E4DEBA /* RTXNavigationController.h */,
+				1D781269214E9D4300E4DEBA /* RTXNavigationController.m */,
+				1D781265214E9D2400E4DEBA /* RTXViewController.h */,
+				1D781266214E9D2400E4DEBA /* RTXViewController.m */,
+				1D78126B214E9D8A00E4DEBA /* RTXTransitionAnimation.h */,
+				1D78126C214E9D8A00E4DEBA /* RTXTransitionAnimation.m */,
+				1D78126E214E9DAD00E4DEBA /* RTXInteractiveTransition.h */,
+				1D78126F214E9DAD00E4DEBA /* RTXInteractiveTransition.m */,
+				1D781271214E9DD700E4DEBA /* RTXNavigationBar.h */,
+				1D781272214E9DD700E4DEBA /* RTXNavigationBar.m */,
+			);
+			name = RTXTransitionKit;
+			path = ../RTXTransitionKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DD5C804214C2B60005ED5B1 /* RTXTransitionKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD5C81B214C2B62005ED5B1 /* Build configuration list for PBXNativeTarget "RTXTransitionKitDemo" */;
+			buildPhases = (
+				1DD5C801214C2B60005ED5B1 /* Sources */,
+				1DD5C802214C2B60005ED5B1 /* Frameworks */,
+				1DD5C803214C2B60005ED5B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTXTransitionKitDemo;
+			productName = RTXTransitionKitDemo;
+			productReference = 1DD5C805214C2B60005ED5B1 /* RTXTransitionKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DD5C7FD214C2B60005ED5B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = menttofly;
+				TargetAttributes = {
+					1DD5C804214C2B60005ED5B1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1DD5C800214C2B60005ED5B1 /* Build configuration list for PBXProject "RTXTransitionKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DD5C7FC214C2B60005ED5B1;
+			productRefGroup = 1DD5C806214C2B60005ED5B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DD5C804214C2B60005ED5B1 /* RTXTransitionKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DD5C803214C2B60005ED5B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD5C815214C2B62005ED5B1 /* LaunchScreen.storyboard in Resources */,
+				1DD5C812214C2B62005ED5B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DD5C801214C2B60005ED5B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D78127C214EAC2900E4DEBA /* RTXBaseViewController.m in Sources */,
+				1D78126A214E9D4300E4DEBA /* RTXNavigationController.m in Sources */,
+				1D781267214E9D2400E4DEBA /* RTXViewController.m in Sources */,
+				1D781273214E9DD700E4DEBA /* RTXNavigationBar.m in Sources */,
+				1D78126D214E9D8A00E4DEBA /* RTXTransitionAnimation.m in Sources */,
+				1D781270214E9DAD00E4DEBA /* RTXInteractiveTransition.m in Sources */,
+				1D781276214EA89300E4DEBA /* RTXTabBarController.m in Sources */,
+				1DD5C818214C2B62005ED5B1 /* main.m in Sources */,
+				1DD5C80A214C2B60005ED5B1 /* AppDelegate.m in Sources */,
+				1DD5C821214C2C21005ED5B1 /* UIViewController+RTXTransitionKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DD5C813214C2B62005ED5B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DD5C814214C2B62005ED5B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DD5C819214C2B62005ED5B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DD5C81A214C2B62005ED5B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DD5C81C214C2B62005ED5B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RTXTransitionKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.menttofly.RTXTransitionKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DD5C81D214C2B62005ED5B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RTXTransitionKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.menttofly.RTXTransitionKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DD5C800214C2B60005ED5B1 /* Build configuration list for PBXProject "RTXTransitionKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD5C819214C2B62005ED5B1 /* Debug */,
+				1DD5C81A214C2B62005ED5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD5C81B214C2B62005ED5B1 /* Build configuration list for PBXNativeTarget "RTXTransitionKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD5C81C214C2B62005ED5B1 /* Debug */,
+				1DD5C81D214C2B62005ED5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DD5C7FD214C2B60005ED5B1 /* Project object */;
+}
