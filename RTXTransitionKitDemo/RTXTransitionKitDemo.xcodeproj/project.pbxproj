@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D1612712150049600A81638 /* RTXTransitionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXTransitionKit.h; sourceTree = "<group>"; };
 		1D781265214E9D2400E4DEBA /* RTXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXViewController.h; sourceTree = "<group>"; };
 		1D781266214E9D2400E4DEBA /* RTXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTXViewController.m; sourceTree = "<group>"; };
 		1D781268214E9D4300E4DEBA /* RTXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTXNavigationController.h; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 				1D78126F214E9DAD00E4DEBA /* RTXInteractiveTransition.m */,
 				1D781271214E9DD700E4DEBA /* RTXNavigationBar.h */,
 				1D781272214E9DD700E4DEBA /* RTXNavigationBar.m */,
+				1D1612712150049600A81638 /* RTXTransitionKit.h */,
 			);
 			name = RTXTransitionKit;
 			path = ../RTXTransitionKit;
