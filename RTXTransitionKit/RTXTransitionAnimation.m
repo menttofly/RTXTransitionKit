@@ -1,6 +1,6 @@
 //
 //  RTXTransitionAnimation.m
-//  RTXTransitionKitDemo
+//  RTXTransitionKit <https://github.com/menttofly/RTXTransitionKit>
 //
 //  Created by menttofly on 2018/9/16.
 //  Copyright © 2018年 menttofly. All rights reserved.
@@ -69,9 +69,11 @@ static const NSTimeInterval RTXPopTransitionDuration = 0.25;
     if (!self.pushFromRoot) return;
     
     UIView *snapshot = [vc.tabBarController.tabBar snapshotViewAfterScreenUpdates:NO];
-    snapshot.frame = CGRectMake(0, frame.size.height - snapshot.frame.size.height, frame.size.width, snapshot.frame.size.height);
-    [view addSubview:snapshot];
-    objc_setAssociatedObject(view, &RTXSnapshotViewKey, snapshot, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if (snapshot) {
+        snapshot.frame = CGRectMake(0, frame.size.height - snapshot.frame.size.height, frame.size.width, snapshot.frame.size.height);
+        [view addSubview:snapshot];
+        objc_setAssociatedObject(view, &RTXSnapshotViewKey, snapshot, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
 }
 
 - (void)_transtionAnimation:(nullable id <UIViewControllerContextTransitioning>)transitionContext reverse:(BOOL)reverse{

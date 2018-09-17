@@ -1,6 +1,6 @@
 //
 //  RTXInteractiveTransition.m
-//  RTXTransitionKitDemo
+//  RTXTransitionKit <https://github.com/menttofly/RTXTransitionKit>
 //
 //  Created by menttofly on 2018/9/16.
 //  Copyright © 2018年 menttofly. All rights reserved.
@@ -66,7 +66,7 @@
                 CGFloat fraction = translation.x / (float)width;
                 fraction = fminf(fmaxf(fraction, 0.0), 1.0);
                 
-                /// Totally similar to system behavior.
+                /// Basically similar to system behavior.
                 if (fraction >= 0.1 && velocity.x > 200) {
                     _shouldEndInteraction = YES;
                 } else {

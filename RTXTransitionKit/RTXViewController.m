@@ -1,6 +1,6 @@
 //
 //  RTXViewController.m
-//  RTXTransitionKitDemo
+//  RTXTransitionKit <https://github.com/menttofly/RTXTransitionKit>
 //
 //  Created by menttofly on 2018/9/16.
 //  Copyright © 2018年 menttofly. All rights reserved.
@@ -56,11 +56,6 @@
     }
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [self rtx_processMultiGestureRecognizer];
-}
-
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     if (_navigationBar) [self.view bringSubviewToFront:_navigationBar];
@@ -76,8 +71,8 @@
 - (RTXNavigationBar *)navigationBar {
     if (!_navigationBar && _showNavigationBar) {
         _navigationBar = [RTXNavigationBar isolatedNavigationBar];
-        _navigationBar.delegate = self;
         _navigationBar.topItem.title = self.title;
+        _navigationBar.delegate = self;
         [self.view addSubview:_navigationBar];
     }
     return _navigationBar;
