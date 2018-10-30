@@ -14,7 +14,7 @@
 #pragma mark - Attributes
 
 - (void)setRtx_pushTransitionDisabled:(BOOL)rtx_pushTransitionDisabled {
-    objc_setAssociatedObject(self, @selector(rtx_pushTransitionDisabled), @(rtx_pushTransitionDisabled), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(rtx_pushTransitionDisabled), @(rtx_pushTransitionDisabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)rtx_pushTransitionDisabled {
@@ -22,7 +22,7 @@
 }
 
 - (void)setRtx_popTransitionDisabled:(BOOL)rtx_popTransitionDisabled {
-    objc_setAssociatedObject(self, @selector(rtx_popTransitionDisabled), @(rtx_popTransitionDisabled), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(rtx_popTransitionDisabled), @(rtx_popTransitionDisabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)rtx_popTransitionDisabled {
@@ -30,7 +30,7 @@
 }
 
 - (void)setRtx_interactivePopDisabled:(BOOL)rtx_interactivePopDisabled {
-    objc_setAssociatedObject(self, @selector(rtx_interactivePopDisabled), @(rtx_interactivePopDisabled), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(rtx_interactivePopDisabled), @(rtx_interactivePopDisabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)rtx_interactivePopDisabled {
@@ -38,7 +38,7 @@
 }
 
 - (void)setRtx_isTransitionViewController:(BOOL)rtx_isTransitionViewController {
-    objc_setAssociatedObject(self, @selector(rtx_isTransitionViewController), @(rtx_isTransitionViewController), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, @selector(rtx_isTransitionViewController), @(rtx_isTransitionViewController), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)rtx_isTransitionViewController {
