@@ -69,11 +69,9 @@ static const NSTimeInterval RTXPopTransitionDuration = 0.25;
     if (!self.pushFromRoot) return;
     
     UIView *snapshot = [vc.tabBarController.tabBar snapshotViewAfterScreenUpdates:NO];
-    if (snapshot) {
-        snapshot.frame = CGRectMake(0, frame.size.height - snapshot.frame.size.height, frame.size.width, snapshot.frame.size.height);
-        [view addSubview:snapshot];
-        objc_setAssociatedObject(view, &RTXSnapshotViewKey, snapshot, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
+    snapshot.frame = CGRectMake(0, frame.size.height, frame.size.width, snapshot.frame.size.height);
+    [view addSubview:snapshot];
+    objc_setAssociatedObject(view, &RTXSnapshotViewKey, snapshot, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)_transtionAnimation:(nullable id <UIViewControllerContextTransitioning>)transitionContext reverse:(BOOL)reverse{
@@ -93,18 +91,19 @@ static const NSTimeInterval RTXPopTransitionDuration = 0.25;
     
     /// Process from view and to view.
     if (reverse) {
-        toView.frame = initFrame;
+        toView.frame = finalFrame;
+        fromView.frame = initFrame;
         [containerView addSubview:toView];
         [containerView sendSubviewToBack:toView];
         [self _applyAntiAliasing:YES forView:toView];
         [self _applyTransform:toView];
     } else {
-        [self _processTabBar:fromVC view:fromView frame:finalFrame];
+        [self _processTabBar:fromVC view:fromView frame:initFrame];
         
         toView.frame = CGRectOffset(finalFrame, finalFrame.size.width, 0);
         [containerView addSubview:toView];
         fromView.layer.anchorPoint = CGPointMake(1, 0.5);
-        fromView.frame = finalFrame;
+        fromView.frame = initFrame;
     }
     fromVC.tabBarController.tabBar.hidden = YES;
     
