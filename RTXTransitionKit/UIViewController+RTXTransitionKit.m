@@ -53,6 +53,14 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+- (CGRect)rtx_safeAreaFrame {
+    if (@available(iOS 11.0, *)) {
+        return CGRectMake(0, RTXSafeAreaTop, self.view.frame.size.width, self.view.frame.size.height - self.view.safeAreaInsets.bottom - RTXSafeAreaTop);
+    } else {
+        return CGRectMake(0, RTXSafeAreaTop, self.view.frame.size.width, self.view.frame.size.height - RTXSafeAreaTop);
+    }
+}
+
 - (void)rtx_processMultiGestureRecognizer {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wcompare-distinct-pointer-types"

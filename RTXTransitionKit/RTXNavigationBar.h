@@ -11,7 +11,6 @@
 @interface RTXNavigationBar : UINavigationBar
 
 @property (nonatomic) BOOL includeStatusBar;
-
 + (RTXNavigationBar *)isolatedNavigationBar;
 - (void)relayout;
 

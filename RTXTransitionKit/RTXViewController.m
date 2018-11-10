@@ -49,13 +49,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    if (_navigationBar && !_navigationBar.superview) {
-        [self.view addSubview:_navigationBar];
-    }
-}
-
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     if (_navigationBar) [self.view bringSubviewToFront:_navigationBar];

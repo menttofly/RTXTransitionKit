@@ -7,10 +7,15 @@
 //
 
 #import "RTXNavigationBar.h"
+#import "UIViewController+RTXTransitionKit.h"
+
+NS_INLINE CGFloat statusBarHeight() {
+    return IPHONEXSERIES ? RTXIPhoneXStatusBarHeight : RTXRegularStatusBarHeight;
+}
 
 @implementation RTXNavigationBar
 
-#pragma mark - Initializer
+#pragma mark - Override
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
@@ -34,10 +39,7 @@
     [super layoutSubviews];
     if (_includeStatusBar) {
         /// Insure _UIBarBackground behavior similar to the UINavigationBar associated with UINavigationController
-        CGRect statusBarFrame = UIApplication.sharedApplication.statusBarFrame;
-        CGFloat height = statusBarFrame.size.height;
-        
-        if (height == 0) height = 20;
+        CGFloat height = statusBarHeight();
         
         UIView *barBackground = self.subviews.firstObject;
         CGRect frame = barBackground.frame;
@@ -71,7 +73,7 @@
 - (void)setIncludeStatusBar:(BOOL)includeStatusBar {
     _includeStatusBar = includeStatusBar;
     CGRect frame = self.frame;
-    frame.origin.y = includeStatusBar ? 20 : 0;
+    frame.origin.y = includeStatusBar ? statusBarHeight() : 0;
     self.frame = frame;
 }
 
@@ -96,16 +98,10 @@
 }
 
 - (void)relayout {
-    CGRect statusBarFrame = UIApplication.sharedApplication.statusBarFrame;
-    CGFloat statusBarHeight = statusBarFrame.size.height;
-    CGFloat statusBarWidth = statusBarFrame.size.width;
-    if (statusBarHeight == 0) statusBarHeight = 20;
-    if (statusBarWidth == 0) statusBarWidth = UIScreen.mainScreen.bounds.size.width;
-    
     if (_includeStatusBar) {
-        self.frame = CGRectMake(0, statusBarHeight, statusBarWidth, 44);
+        self.frame = CGRectMake(0, statusBarHeight(), UIScreen.mainScreen.bounds.size.width, RTXNavigationBarHeight);
     } else {
-        self.frame = CGRectMake(0, 0, statusBarWidth, 44);
+        self.frame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, RTXNavigationBarHeight);
     }
 }
 
