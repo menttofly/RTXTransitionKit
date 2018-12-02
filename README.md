@@ -1,5 +1,5 @@
 # RTXTransitionKit
-Implement the independent navigation bar and transition animation effects like TouTiao.
+Implement the independent navigation bar and transition animation effects.
 
 ### Installation
 #### CocoaPods
